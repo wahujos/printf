@@ -45,7 +45,7 @@ int prints_string(va_list args)
  * Return: interger value
  */
 
-int prints_percent(va_list args)
+int prints_percent(va_list args __attribute__((__unused__)))
 {
 	_putchar('%');
 	return (1);
