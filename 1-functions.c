@@ -50,3 +50,41 @@ int prints_percent(va_list args __attribute__((__unused__)))
 	_putchar('%');
 	return (1);
 }
+/**
+ * _decimal - print integer value and counts number
+ * @i: integer value to print
+ * @count_num: hold the count
+ * Return: value of count num
+ */
+int _decimal(int i, int count_num)
+{
+	int holder = i;
+
+	if (i < 0)
+	{
+		_putchar('-');
+		holder = -1 * i;
+		count_num = count_num + 1;
+	}
+	if (holder / 10)
+	{
+		count_num = _decimal((holder / 10), count_num);
+	}
+	_putchar((i % 10) + 48);
+	return (count_num + 1);
+}
+/**
+ * prints_decinal - function prints decimal number
+ * @args: passed argument
+ * Return: interger, number of characters printed out
+ */
+
+int prints_decimal(va_list args)
+{
+	int decimal_count = 0;
+	int val1 = va_arg(args, int);
+
+	decimal_count = _decimal(val1, 0);
+	return (decimal_count);
+
+}
