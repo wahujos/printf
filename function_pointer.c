@@ -32,6 +32,5 @@ int (*function_pointer(char q))(va_list)
 	{
 		return (&prints_binary);
 	}
-
 	return (NULL);
 }
