@@ -46,7 +46,7 @@ int prints_string(va_list args)
 
 		return (6);
 	}
-	else if (s == "")
+	else
 	{
 		return (-1);
 	}
