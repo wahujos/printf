@@ -28,11 +28,10 @@ int _printf(const char *format, ...)
 				va_end(args);
 				return (-1);
 			}
-			else if (q_holder == '%')
+			else if (q_holder == ' ')
 			{
-				_putchar('%');
-				count++;
-				i++;
+				va_end(args);
+				return (-1);
 			}
 		count = count + (*function_pointer(q_holder))(args);
 		i++;
