@@ -27,9 +27,10 @@ int (*function_pointer(char q))(va_list)
 	{
 		return (&prints_decimal);
 	}
-	else if (q == 'b')
+	/**else if (q == 'b')
 	{
 		return (&prints_binary);
 	}
+	*/
 	return (NULL);
 }
