@@ -34,6 +34,7 @@ int prints_string(va_list args)
 		}
 		return (length);
 	}
+
 	else if (s == NULL)
 	{
 		_putchar('(');
@@ -45,9 +46,9 @@ int prints_string(va_list args)
 
 		return (6);
 	}
-	else if (s == "")
+	else
 	{
-		return (0);
+		return (-1);
 	}
 }
 /**
