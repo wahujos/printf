@@ -9,6 +9,7 @@ int(*function_pointer(char q))(va_list args);
 int prints_char(va_list args);
 int prints_string(va_list args);
 int prints_percent(va_list args);
+int prints_decimal(va_list args);
+int _decimal(int i, int count_num);
 int _printf(const char *format, ...);
-
 #endif
