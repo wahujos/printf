@@ -34,9 +34,21 @@ int prints_string(va_list args)
 		}
 		return (length);
 	}
+
+	else if (s == NULL)
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+
+		return (6);
+	}
 	else
 	{
-		return (-1);
+		return (0);
 	}
 }
 /**
@@ -86,5 +98,4 @@ int prints_decimal(va_list args)
 
 	decimal_count = _decimal(val1, 0);
 	return (decimal_count);
-
 }
