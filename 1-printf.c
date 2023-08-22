@@ -3,7 +3,6 @@
 /**
  * _printf - My printf function
  * @format: A character string
- *
  * Return: Is the value of count
  */
 int _printf(const char *format, ...)

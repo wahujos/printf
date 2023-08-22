@@ -16,8 +16,6 @@ int prints_char(va_list args)
  * @args: passed argument
  * Return: interger value
  */
-
-
 int prints_string(va_list args)
 {
 	unsigned int length = 0;
