@@ -34,7 +34,19 @@ int prints_string(va_list args)
 		}
 		return (length);
 	}
-	else
+
+	else if (s == NULL)
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+
+		return (6);
+	}
+	else if (s == "")
 	{
 		return (-1);
 	}
@@ -49,4 +61,14 @@ int prints_percent(va_list args __attribute__((__unused__)))
 {
 	_putchar('%');
 	return (1);
+}
+/**
+ * prints_nothing - Prints nothing after encounterning only one %
+ * @args: Passed argument
+ *
+ * Return: Is -1
+ */
+int prints_nothing(va_list args __attribute__((__unused__)))
+{
+	return (-1);
 }
