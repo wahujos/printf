@@ -19,5 +19,17 @@ int (*function_pointer(char q))(va_list)
 	{
 		return (&prints_percent);
 	}
+	else if (q == 'd')
+	{
+		return (&prints_decimal);
+	}
+	else if (q == 'i')
+	{
+		return (&prints_decimal);
+	}
+	else if (q == 'b')
+	{
+		return (&prints_binary);
+	}
 	return (NULL);
 }
