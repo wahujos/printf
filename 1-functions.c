@@ -8,6 +8,10 @@ int prints_char(va_list args)
 {
 	char c = va_arg(args, int);
 
+		if (c == '\0')
+		{
+			return (1);
+		}
 	_putchar(c);
 	return (1);
 }
@@ -16,8 +20,6 @@ int prints_char(va_list args)
  * @args: passed argument
  * Return: interger value
  */
-
-
 int prints_string(va_list args)
 {
 	unsigned int length = 0;
