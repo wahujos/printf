@@ -48,7 +48,7 @@ int prints_string(va_list args)
 	}
 	else
 	{
-		return (-1);
+		return (0);
 	}
 }
 /**
