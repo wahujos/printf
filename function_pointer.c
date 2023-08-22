@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * function_pointer - checks appropriate function
- * @q: the character to compare
- * Return: address to the assocaited function call
+ * function_pointer - Checks the appropriate function
+ * @q: The character to compare
+ *
+ * Return: Is address to the associated function call
  */
 int (*function_pointer(char q))(va_list)
 {
@@ -27,10 +28,9 @@ int (*function_pointer(char q))(va_list)
 	{
 		return (&prints_decimal);
 	}
-	/**else if (q == 'b')
+	else if (q == 'b')
 	{
 		return (&prints_binary);
 	}
-	*/
 	return (NULL);
 }
