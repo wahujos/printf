@@ -10,5 +10,9 @@ int prints_char(va_list args);
 int prints_string(va_list args);
 int prints_percent(va_list args);
 int _printf(const char *format, ...);
+int prints_decimal(va_list args);
+int _decimal(int i, int count_num);
+int _binary(int);
+int prints_binary(va_list args);
 
 #endif
