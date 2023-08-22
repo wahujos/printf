@@ -86,7 +86,7 @@ int _decimal(int i, int count_num)
 	return (count_num + 1);
 }
 /**
- * prints_decinal - function prints decimal number
+ * prints_decimal - function prints decimal number
  * @args: passed argument
  * Return: interger, number of characters printed out
  */
